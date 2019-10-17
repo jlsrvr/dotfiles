@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="robbyrussell"
 
 # Useful oh-my-zsh plugins for Le Wagon bootcamps
-plugins=(git gitfast last-working-dir common-aliases sublime zsh-syntax-highlighting history-substring-search)
+plugins=(git gitfast last-working-dir common-aliases sublime zsh-syntax-highlighting history-substring-search ruby bundler)
 
 # Prevent Homebrew from reporting - https://github.com/Homebrew/brew/blob/master/share/doc/homebrew/Analytics.md
 export HOMEBREW_NO_ANALYTICS=1
@@ -15,8 +15,8 @@ source "${ZSH}/oh-my-zsh.sh"
 unalias rm # No interactive rm by default (brought by plugins/common-aliases)
 
 # Load rbenv if installed (To manage your Ruby versions)
-export PATH="${HOME}/.rbenv/bin:${PATH}"
-type -a rbenv > /dev/null && eval "$(rbenv init -)"
+# export PATH="${HOME}/.rbenv/bin:${PATH}"
+# type -a rbenv > /dev/null && eval "$(rbenv init -)"
 
 # Load nvm if installed (To manage your Node versions)
 export NVM_DIR="$HOME/.nvm"
@@ -38,4 +38,8 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
+export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
