@@ -15,8 +15,8 @@ source "${ZSH}/oh-my-zsh.sh"
 unalias rm # No interactive rm by default (brought by plugins/common-aliases)
 
 # Load rbenv if installed (To manage your Ruby versions)
-# export PATH="${HOME}/.rbenv/bin:${PATH}"
-# type -a rbenv > /dev/null && eval "$(rbenv init -)"
+export PATH="${HOME}/.rbenv/bin:${PATH}"
+type -a rbenv > /dev/null && eval "$(rbenv init -)"
 
 # Load nvm if installed (To manage your Node versions)
 export NVM_DIR="$HOME/.nvm"
