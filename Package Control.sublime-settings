@@ -10,12 +10,14 @@
 		"Babel",
 		"Emmet",
 		"ERB Snippets",
+		"FileIcons",
 		"Git",
 		"GitGutter",
 		"Package Control",
 		"SCSS",
 		"SublimeLinter",
 		"SublimeLinter-eslint",
-		"SublimeLinter-rubocop"
+		"SublimeLinter-rubocop",
+		"Theme - Brogrammer"
 	]
 }
