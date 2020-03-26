@@ -44,3 +44,9 @@ export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bi
 export PATH="$PATH:$HOME/.rvm/bin"
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/captivejr/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/captivejr/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/captivejr/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/captivejr/google-cloud-sdk/completion.zsh.inc'; fi

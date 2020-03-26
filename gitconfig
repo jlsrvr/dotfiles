@@ -22,11 +22,15 @@
   d = !git --no-pager diff
   dt  = difftool
   stat = !git --no-pager diff --stat
+  r = rebase
 
   yoda = push --force-with-lease
 
   # Clean merged branches
   sweep = !git branch --merged master | grep -v 'master$' | xargs git branch -d && git remote prune origin
+
+  # Delete all local branchs that don't have a remote counter part
+  clear = !git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | xargs git branch -D
 
   # http://www.jukie.net/bart/blog/pimping-out-git-log
   lg = log --graph --all --pretty=format:'%C(yellow)%h%Creset - %s %Cred%d%Creset %C(cyan)%an%Creset %Cgreen(%cr)'
