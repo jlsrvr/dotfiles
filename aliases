@@ -7,7 +7,10 @@ alias speedtest="wget -O /dev/null http://speedtest.wdc01.softlayer.com/download
 alias serve='ruby -run -e httpd . -p 8000'  # Or python -m SimpleHTTPServer :)
 
 # Add alias for norminette
-alias norminette="~/.norminette/norminette.rb"
+# alias norminette="~/.norminette/norminette.rb"
 
 # Quickly amend last commit
 alias gcane='git commit --amend --no-edit'
+
+# Acces console gcp
+alias gcpconsole="kubectl exec -it $(kubectl get pods | grep sherlock-web | cut -d' ' -f1) --container sherlock-web -- bash"

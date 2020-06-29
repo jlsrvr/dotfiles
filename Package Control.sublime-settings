@@ -21,6 +21,7 @@
 		"SublimeLinter",
 		"SublimeLinter-eslint",
 		"SublimeLinter-rubocop",
-		"Theme - Brogrammer"
+		"Theme - Brogrammer",
+		"TypeScript Syntax"
 	]
 }

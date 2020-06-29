@@ -1,4 +1,4 @@
-[color]
+ [color]
   branch = auto
   diff = auto
   interactive = auto
@@ -22,7 +22,8 @@
   dt  = difftool
   stat = !git --no-pager diff --stat
   r = rebase
-  yoda = push --force-with-lease
+
+  yoda = !git push --force-with-lease
 
   # Clean merged branches
   sweep = !git branch --merged master | grep -v 'master$' | xargs git branch -d && git remote prune origin
