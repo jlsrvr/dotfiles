@@ -17,7 +17,6 @@
   co = checkout
   st = status -sb
   br = branch
-  ci = commit
   fo = fetch origin
   d = !git --no-pager diff
   dt  = difftool
