@@ -29,7 +29,7 @@
   # Clean merged branches
   sweep = !git branch --merged master | grep -v 'master$' | xargs git branch -d && git remote prune origin
 
-  # Delete all local branchs that don't have a remote counter part
+  # Delete all local branches that don't have a remote counter part
   clear = !git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | xargs git branch -D
 
   # http://www.jukie.net/bart/blog/pimping-out-git-log
