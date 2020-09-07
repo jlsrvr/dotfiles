@@ -50,3 +50,4 @@ if [ -f '/Users/captivejr/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/capti
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/captivejr/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/captivejr/google-cloud-sdk/completion.zsh.inc'; fi
+export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
