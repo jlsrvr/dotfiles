@@ -8,23 +8,17 @@
 		"AdvancedNewFile",
 		"All Autocomplete",
 		"Auto Close HTML Tags",
-		"Babel",
-		"Babel Snippets",
 		"Emmet",
 		"ERB Snippets",
 		"ESLint",
-		"FileIcons",
 		"Git",
 		"GitGutter",
 		"JSON Stringify",
 		"Package Control",
-		"React Development Snippets",
-		"React Templates",
 		"SCSS",
 		"SublimeLinter",
 		"SublimeLinter-eslint",
 		"SublimeLinter-rubocop",
-		"Theme - Brogrammer",
-		"TypeScript Syntax"
+		"Theme - Brogrammer"
 	]
 }
