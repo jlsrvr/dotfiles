@@ -14,6 +14,13 @@ export HOMEBREW_NO_ANALYTICS=1
 source "${ZSH}/oh-my-zsh.sh"
 unalias rm # No interactive rm by default (brought by plugins/common-aliases)
 
+if [ -f /usr/share/powerline/bindings/bash/powerline.sh ]; then
+  source /usr/share/powerline/bindings/bash/powerline.sh
+fi
+
+# Set editor for tmuxinator
+export EDITOR="vim"
+
 # Load rbenv if installed (To manage your Ruby versions)
 # export PATH="${HOME}/.rbenv/bin:${PATH}"
 # type -a rbenv > /dev/null && eval "$(rbenv init -)"

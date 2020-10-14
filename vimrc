@@ -73,7 +73,7 @@ Plug 'jremmen/vim-ripgrep'                                            " Enhance 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }     " Fuzzy finder
 Plug 'junegunn/fzf.vim'
 
-Plug 'edkolev/tmuxline.vim'                                           " Using same colourfor vim & tmux
+" Plug 'edkolev/tmuxline.vim'                                           " Using same colourfor vim & tmux
 
 call plug#end()
 
