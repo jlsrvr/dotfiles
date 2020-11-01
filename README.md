@@ -1,8 +1,17 @@
-This repository is used by [Le Wagon](https://www.lewagon.com) students during our 9-week [coding bootcamp](https://www.lewagon.com).
+# Personal setup:
 
-## Toolset
+Follow the le [wagon setup](https://github.com/lewagon/setup/blob/master/macOS.md)
 
-- [oh-my-zsh](http://ohmyz.sh/)
-- [Sublime Text](https://www.sublimetext.com/)
-- [git](https://git-scm.com/)
-- Ruby via [`rbenv`](https://github.com/rbenv/rbenv)
+VIM installation:
+```VIM
+:PlugInstall
+```
+set VIM as default editor:
+```bash
+export VISUAL=vim
+export EDITOR="$VISUAL"
+```
+create the temp directory for swap files:
+```bash
+mkdir ~/.vim/tmp
+```
