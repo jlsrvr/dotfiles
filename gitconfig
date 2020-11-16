@@ -22,7 +22,6 @@
   dt  = difftool
   stat = !git --no-pager diff --stat
   r = rebase
-
   yoda = push --force-with-lease
 
   # Clean merged branches

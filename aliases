@@ -8,3 +8,6 @@ alias serve='ruby -run -e httpd . -p 8000'  # Or python -m SimpleHTTPServer :)
 
 # Add alias for norminette
 alias norminette="~/.norminette/norminette.rb"
+
+# Quickly amend last commit
+alias gcane='git commit --amend --no-edit'
