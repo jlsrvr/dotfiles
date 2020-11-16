@@ -15,3 +15,9 @@ create the temp directory for swap files:
 ```bash
 mkdir ~/.vim/tmp
 ```
+add norminette:
+```bash
+git clone https://github.com/42Paris/norminette.git ~/.norminette/
+cd ~/.norminette/
+bundle
+```
