@@ -16,9 +16,9 @@ set cursorline                           " Highlight cursor line
 set title                                " Set the window's title, with filename being edited
 
 set visualbell
-set tabstop=2                            " effectively how many columns of whitespace a \t is worth
-set shiftwidth=2                         " how many columns of whitespace a “level of indentation” is worth.
-set softtabstop=2                        " is how many columns of whitespace a tab keypress or a backspace keypress is worth.
+set tabstop=4                            " effectively how many columns of whitespace a \t is worth
+set shiftwidth=0                         " how many columns of whitespace a “level of indentation” is worth.
+set softtabstop=0                        " is how many columns of whitespace a tab keypress or a backspace keypress is worth.
 set backspace=indent,eol,start           " Allow backspacing over indentation, line breaks, insertion, utf
 
 " set expandtab                            " means that you never wanna see a \t again in your file
