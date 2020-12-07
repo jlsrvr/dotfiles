@@ -73,6 +73,7 @@ Plug 'christoomey/vim-tmux-navigator'                                 " Navigate
 Plug 'jremmen/vim-ripgrep'                                            " Enhance vimgrep
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }     " Fuzzy finder
 Plug 'junegunn/fzf.vim'
+Plug 'sheerun/vim-polyglot'
 
 " Plug 'edkolev/tmuxline.vim'                                           " Using same colourfor vim & tmux
 
@@ -80,19 +81,3 @@ call plug#end()
 
 colorscheme monokai
 set noshowmode
-let g:lightline = { 'colorscheme': 'jellybeans'}
-
-let g:lightline = {
-      \ 'component_function': {
-      \   'fileformat': 'LightlineFileformat',
-      \   'filetype': 'LightlineFiletype',
-      \ },
-      \ }
-
-function! LightlineFileformat()
-  return winwidth(0) > 70 ? &fileformat : ''
-endfunction
-
-function! LightlineFiletype()
-  return winwidth(0) > 70 ? (&filetype !=# '' ? &filetype : 'no ft') : ''
-endfunction
