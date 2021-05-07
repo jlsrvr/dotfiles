@@ -58,3 +58,4 @@ if [ -f '/Users/captivejr/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/capti
 if [ -f '/Users/captivejr/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/captivejr/google-cloud-sdk/completion.zsh.inc'; fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export PATH=/Users/jrivoire/.brew/bin:/Users/jrivoire/.brew/bin:./bin:./node_modules/.bin:/Users/jrivoire/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/munki:/usr/local/sbin:/Users/jrivoire/.rvm/bin:/Users/jrivoire/.fzf/bin
