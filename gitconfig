@@ -39,7 +39,7 @@
 
   d = checkout develop
 
-  m = checkout master
+  m = checkout main
 
   # Removes a file from the index
   unstage = reset HEAD --
@@ -49,11 +49,13 @@
 
 [push]
 	default = simple
+	autoSetupRemote = true
+	autoSetupRemote = true
 
 [pull]
   rebase = true
 
-[branch "master"]
+[branch "main"]
   mergeoptions = --no-edit
 [user]
 	email = julesriv@gmail.com

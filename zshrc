@@ -21,10 +21,6 @@ fi
 # Set editor for tmuxinator
 export EDITOR="vim"
 
-# Set variables for the 42header
-export USER="jrivoire"
-export MAIL="jrivoire@student.42.fr"
-
 # Load rbenv if installed (To manage your Ruby versions)
 export PATH="${HOME}/.rbenv/bin:${PATH}"
 type -a rbenv > /dev/null && eval "$(rbenv init -)"
@@ -50,3 +46,5 @@ export LC_ALL=en_US.UTF-8
 export PATH="$PATH:$HOME/.rvm/bin"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+. /usr/local/opt/asdf/libexec/asdf.sh
