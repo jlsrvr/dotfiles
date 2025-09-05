@@ -7,9 +7,7 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export EDITOR="vim"
 export ASDF_DATA_DIR="$HOME/.asdf"
-export PATH="/opt/homebrew/bin:$HOME/.asdf/shims:$HOME/.docker/bin:/usr/local/opt/node@20/bin:$PATH"
-
-source "${ZSH}/oh-my-zsh.sh"
+export PATH="$HOME/.asdf/shims:/opt/homebrew/bin:$HOME/.docker/bin:/usr/local/opt/node@20/bin:$PATH"
 
 if [ -f /usr/share/powerline/bindings/bash/powerline.sh ]; then
   source /usr/share/powerline/bindings/bash/powerline.sh
@@ -17,10 +15,6 @@ fi
 
 [[ -f "$HOME/.aliases" ]] && source "$HOME/.aliases"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-autoload -Uz compinit && compinit
-autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /usr/local/bin/terraform terraform
 
 # History configuration
 HISTFILE=~/.zsh_history
@@ -37,3 +31,11 @@ alias gd='git diff'
 # Terminal colors
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
+
+# Load Oh-My-Zsh last, after PATH and variables
+source "${ZSH}/oh-my-zsh.sh"
+
+autoload -Uz compinit && compinit
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/terraform terraform
+
