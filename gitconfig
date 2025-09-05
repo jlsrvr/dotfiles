@@ -60,3 +60,5 @@
 [user]
 	email = julesriv@gmail.com
 	name = Jules Rivoire
+[init]
+	defaultBranch = main

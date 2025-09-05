@@ -11,3 +11,5 @@ alias serve='ruby -run -e httpd . -p 8000'  # Or python -m SimpleHTTPServer :)
 alias gcane='git commit --amend --no-edit'
 
 alias stt='code .'
+
+alias desk_big_screens='displayplacer "id:288BF9F2-45D8-4EF7-9A77-1FB5FF4E26B3 res:1920x1080 hz:75 color_depth:8 scaling:off origin:(0,0) degree:0" "id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1470x956 hz:60 color_depth:8 scaling:on origin:(-1470,194) degree:0"'
